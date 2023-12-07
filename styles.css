@@ -1,0 +1,27 @@
+body {
+    background-color: sandybrown;
+    font-family: 'Gideon Roman', serif;
+}
+
+#number-input {
+    background-color: sandybrown;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    font-family: 'Gideon Roman';
+    font-size: 3rem
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#output {
+
+}
