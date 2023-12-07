@@ -1,19 +1,56 @@
+
+:root {
+    --main-colour: #91623a;
+    --border-colour: #edb67e;
+    --text-colour: white;
+}
+
 body {
-    background-color: sandybrown;
+    background-color: var(--main-colour);
     font-family: 'Gideon Roman', serif;
+    color: var(--text-colour);
+}
+
+#layout {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    background-image: url("images/lespinas-xavier-0-G-N0-0FOA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    border-radius: 1rem;
+    box-shadow: 2px 2px #433420;
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: #91623a 0.25rem 0.25rem;
 }
 
 #number-input {
-    background-color: sandybrown;
+    background-color: var(--border-colour);
     height: 4rem;
-    border-radius: 1rem;
-    border: 2px solid white;
-    font-family: 'Gideon Roman';
-    font-size: 3rem
+    width: fit-content;
+    /*border-radius: 0.5rem;*/
+    border: solid 1px var(--border-colour);
+    color: var(--text-colour);
+    /*text-shadow: #91623a 0.25rem 0.25rem;*/
+    font-family: 'Gideon Roman', serif;
+    font-size: 3rem;
+    text-align: center;
 }
 
 input:focus {
     outline: none;
+}
+
+input::placeholder {
+    font-size: 2rem;
+    color: var(--text-colour)
+
 }
 
 input::-webkit-outer-spin-button,
@@ -23,5 +60,6 @@ input::-webkit-inner-spin-button {
 }
 
 #output {
-
+font-size: 5rem;
+    height: 6rem;
 }
